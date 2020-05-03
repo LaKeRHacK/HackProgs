@@ -1,7 +1,7 @@
 import os
  
 def first():
-	os.system("apt update")
+    os.system("apt update")
     os.system("apt upgrade")
     os.system("apt install git")
     os.system("apt install python2")
