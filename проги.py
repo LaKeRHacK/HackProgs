@@ -38,7 +38,7 @@ while loop:
         os.system("git clone https://github.com/evait-security/weeman")
         os.system("clear")
         print("/Установка завершена!) Для использования данной утилиты пропишите cd, python2 weeman.py/")
-        qw = input("/Вернуться в главное меню?(да,нет)/")
-        if qw == "да":
-            menu()
+        print("Возвращаю в меню")
+        os.system("clear")
+        
 
