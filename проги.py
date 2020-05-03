@@ -1,5 +1,7 @@
 import os
  
+install = [False, False]
+
 def first():
     os.system("pkg update")
     os.system("pkg upgrade")
@@ -33,12 +35,16 @@ while loop:
     cs = input("Выберите номер утилиты которую хотите установить:")
     
     if cs == '1':
-        first()
-        os.system("pkg install python2")
-        os.system("git clone https://github.com/evait-security/weeman")
-        os.system("clear")
-        print("/Установка завершена!) Для использования данной утилиты пропишите cd, python2 weeman.py/")
-        print("Возвращаю в меню")
-        os.system("clear")
+        if install[0]:
+            first()
+            os.system("pkg install python2")
+            os.system("git clone https://github.com/evait-security/weeman")
+            os.system("clear")
+            print("/Установка завершена!) Для использования данной утилиты пропишите cd, python2 weeman.py/")
+            print("Возвращаю в меню")
+            os.system("clear")
+        else:
+            os.system("cd weeman")
+            os.system("python2 weeman.py")
         
 
