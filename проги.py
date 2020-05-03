@@ -4,7 +4,6 @@ def first():
     os.system("apt update")
     os.system("apt upgrade")
     os.system("apt install git")
-    os.system("apt install python2")
     
 def menu():
 
@@ -35,6 +34,7 @@ while loop:
     
     if cs == '1':
         first()
+        os.system("apt install python2")
         os.system("git clone https://github.com/evait-security/weeman")
         os.system("clear")
         print("/Установка завершена!) Для использования данной утилиты пропишите cd, python2 weeman.py/")
